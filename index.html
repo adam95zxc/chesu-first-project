@@ -1,18 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Иван Разумов — фронтенд-разработчик с 5-летним опытом. Создаю адаптивные и современные сайты.">
+  <title>Иван Разумов — Фронтенд-разработчик</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <h2>Визитка</h2>
-                </div>
-    </header>
+  <header>
+    <nav>
+      <a href="#" class="logo">Ivan Dev</a>
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+      </div>
+
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <h1>Иван Разумов</h1>
+      <p>Фронтенд-разработчик с 5-летним опытом. Создаю адаптивные, современные и быстрые сайты, ориентированные на результат и удобство пользователя.</p>
+      <a href="#contacts" class="button">Связаться</a>
+    </div>
+    <img src="https://i.pinimg.com/originals/70/8c/98/708c98ff2bf5c4329b4aa45a097a15f8.jpg" alt="Фото Ивана Разумова" />
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>Обо мне</h2>
+    <p>Меня зовут Иван Разумов. Я специализируюсь на разработке современных веб-приложений, лендингов и интерфейсов. Люблю создавать красивые и логичные решения, которые приносят пользу бизнесу и комфорт пользователям.</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Навыки</h2>
+    <div class="skills">
+      <div class="skill">HTML / CSS / JS</div>
+      <div class="skill">React</div>
+      <div class="skill">UI/UX дизайн</div>
+      <div class="skill">Оптимизация сайтов</div>
+      <div class="skill">Работа с API</div>
+    </div>
+  </section>
+
+  <section id="contacts" class="fade-in">
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:ivan.dev@example.com">ivan.dev@example.com</a></p>
+    <p>Telegram: <a href="https://t.me/ivandev" target="_blank">@ivandev</a></p>
+    <p>GitHub: <a href="https://github.com/ivandev" target="_blank">github.com/ivandev</a></p>
+  </section>
+
+  <footer>
+    © 2025 Иван Разумов. Все права защищены.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
